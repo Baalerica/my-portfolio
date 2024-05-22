@@ -14,7 +14,7 @@ import {
   LinkedinIcon,
 } from "next-share";
 import "../styles/globals.css";
-import Script from "next/script";
+
 
 export default function Home() {
   return (
@@ -25,10 +25,7 @@ export default function Home() {
         <meta name="description" content="Un chingo de cosas" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <Script
-        src="https://cdn.tailwindcss.com"
-        strategy="beforeInteractive"
-      />
+
       <div className="bg-white">
         <header className="absolute inset-x-0 top-0 z-50">
           <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
