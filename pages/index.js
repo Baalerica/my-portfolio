@@ -13,6 +13,9 @@ import {
   LinkedinIcon,
 
 } from 'next-share';
+import '../styles/globals.css';
+import Script from 'next/script';
+
 
 export default function Home() {
   return (
@@ -23,7 +26,7 @@ export default function Home() {
         <meta name="description" content="Un chingo de cosas" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/estilo.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
       </Head>
       <div className="bg-white">
         <header className="absolute inset-x-0 top-0 z-50">
@@ -31,7 +34,7 @@ export default function Home() {
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                <Image
                   className="h-8 w-auto"
                   src="logo.png"
                   alt=""
@@ -95,7 +98,7 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Baalerica</span>
-                  <img
+                  <Image
                     className="h-8 w-auto"
                     src="logo.png"
                     alt=""
@@ -191,7 +194,7 @@ export default function Home() {
 
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Hello I'm Baalerica!
+                Hello Im Baalerica!
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Lets connect!
