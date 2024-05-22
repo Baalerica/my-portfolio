@@ -13,7 +13,6 @@ import {
   LinkedinShareButton,
   LinkedinIcon,
 } from "next-share";
-import "../styles/globals.css";
 
 
 export default function Home() {
