@@ -270,7 +270,7 @@ export default function Home() {
           >
             <Image
               src="/portfolio-fuzze.png"
-              width={800}
+              width={700}
               height={600}
               classNameName="w-full shadow"
               alt="portfolio image"
@@ -279,14 +279,14 @@ export default function Home() {
           <a href="https://cavycorner.vercel.app/" className="mx-auto transform transition-all hover:scale-105 md:mx-0">
             <Image
               src="/portfolio-cavycorner.png"
-              width={800}
+              width={700}
               height={600}
               classNameName="w-full shadow"
             />
           </a>
           <a href="https://www.microforge.me/" className="mx-auto transform transition-all hover:scale-105 md:mx-0">
             <Image src="/portfolio-microforge.png"
-              width={800}
+              width={700}
               height={600}
               classNameName="w-full shadow"
               alt="portfolio image"
@@ -295,7 +295,7 @@ export default function Home() {
           <a href="https://github.com/TriceraGod/Awuita"
             classNameName="mx-auto transform transition-all hover:scale-105 md:mx-0">
             <Image src="/portfolio-ecoflow.png"
-              width={800}
+              width={700}
               height={600}
               classNameName="w-full shadow"
               alt="portfolio image"
@@ -303,7 +303,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      {/*
+
       <div classNameName="bg-grey-50" id="clients">
         <div classNameName="container py-16 md:py-20">
           <div classNameName="mx-auto w-full sm:w-3/4 lg:w-full">
@@ -362,7 +362,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-            */}
+
 
     </>
   );
