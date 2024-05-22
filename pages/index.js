@@ -1,4 +1,18 @@
 import Head from 'next/head';
+import React from 'react'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  RedditShareButton,
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+
+} from 'next-share';
 
 export default function Home() {
   return (
@@ -19,7 +33,7 @@ export default function Home() {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="logo.png"
                   alt=""
                 />
               </a>
@@ -48,16 +62,25 @@ export default function Home() {
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Product
+                About
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Features
+                Services
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Marketplace
+                Portfolio
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Company
+                Clients
+              </a>
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                Work
+              </a>
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                Statistics
+              </a>
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                Contact
               </a>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -71,10 +94,10 @@ export default function Home() {
             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Your Company</span>
+                  <span className="sr-only">Baalerica</span>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="logo.png"
                     alt=""
                   />
                 </a>
@@ -99,25 +122,43 @@ export default function Home() {
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
-                      Product
+                      About
                     </a>
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
-                      Features
+                      Services
                     </a>
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
-                      Marketplace
+                      Portfolio
                     </a>
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
-                      Company
+                      Clients
+                    </a>
+                    <a
+                      href="#"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Work
+                    </a>
+                    <a
+                      href="#"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Statistics
+                    </a>
+                    <a
+                      href="#"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Contact
                     </a>
                   </div>
                   <div className="py-6">
@@ -147,33 +188,36 @@ export default function Home() {
             ></div>
           </div>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Announcing our next round of funding.{' '}
-                <a href="#" className="font-semibold text-indigo-600">
-                  <span className="absolute inset-0" aria-hidden="true"></span>
-                  Read more <span aria-hidden="true">&rarr;</span>
-                </a>
-              </div>
-            </div>
+
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Data to enrich your online business
+                Hello I'm Baalerica!
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua.
+                Lets connect!
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get started
-                </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
+              <div>
+                <FacebookShareButton
+                  url={'http://localhost:3000'} >
+                  <FacebookIcon size={32} round />
+                </FacebookShareButton>
+                <PinterestShareButton
+                  url={'http://localhost:3000'} >
+                  <PinterestIcon size={32} round />
+                </PinterestShareButton>
+                <RedditShareButton
+                  url={'http://localhost:3000'} >
+                  <RedditIcon size={32} round />
+                </RedditShareButton>
+                <WhatsappShareButton
+                  url={'http://localhost:3000'} >
+                  <WhatsappIcon size={32} round />
+                </WhatsappShareButton>
+                <LinkedinShareButton
+                  url={"https://www.linkedin.com/in/erica-rodr%C3%ADguez/"} >
+                  <LinkedinIcon size={32} round />
+                </LinkedinShareButton>
+
               </div>
             </div>
           </div>
