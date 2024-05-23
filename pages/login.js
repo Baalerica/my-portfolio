@@ -54,9 +54,11 @@ export default function Home() {
                             </button>
                         </div>
                         <div className="hidden lg:flex lg:gap-x-12">
-                            <a href="#about" className="text-sm font-semibold leading-6 text-gray-900">
-                                Home
-                            </a>
+                            <Link href="/index" legacyBehavior>
+                                <a className="text-sm font-semibold leading-6 text-gray-900">
+                                    Home <span aria-hidden="true">&rarr;</span>
+                                </a>
+                            </Link>
                         </div>
                     </nav>
                     <div className="lg:hidden" role="dialog" aria-modal="true">
@@ -90,12 +92,11 @@ export default function Home() {
                             <div className="mt-6 flow-root">
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="space-y-2 py-6">
-                                        <a
-                                            href="#about"
-                                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                        >
-                                            Home
-                                        </a>
+                                        <Link href="/login" legacyBehavior>
+                                            <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                                Home <span aria-hidden="true">&rarr;</span>
+                                            </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
