@@ -222,8 +222,7 @@ export default function Home() {
                 width={700}
                 height={600}
                 alt="Description of the image"
-                className="w-full h-auto rounded-full border-2 border-purple-500"
-              />
+                className="rounded-full border-8 border-primary shadow-xl" />
             </div>
           </div>
 
@@ -241,29 +240,270 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-        Who am I?
-      </h2>
-      <h3 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-        I&apos;m Erica Rodríguez, I&apos;m going to become A Web Developer
-      </h3>
-      <p className="pt-6 font-body leading-relaxed text-grey-20">
-        I&apos;m an engineer in Business Management,
-        currently pursuing a Masters degree in Industrial Engineering.
-        Alongside my academic endeavors, Ive embarked on the exciting
-        ourney of learning front-end programming. This dual focus
-        reflects my dedication to expanding my skills and knowledge base in
-        both business and technology domains. I am eager to leverage this
-        diverse expertise to drive innovation and make meaningful contributions
-        in the fields of business management and industrial engineering.
-      </p>
 
-      <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-        Here&apos;s what I&apos;m good at
-      </h2>
-      <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-        These are the services I offer
-      </h3>
+      <div className="bg-grey-50" id="about">
+        <div className="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+          <div className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+            <h2 className="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+              Who am I?
+            </h2>
+            <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+              I&apos;m Erica Rodr&apos;guez, I&apos;m going to become A Web Developer
+            </h4>
+            <p className="pt-6 font-body leading-relaxed text-grey-20">
+              I&apos;m an engineer in Business Management,
+              currently pursuing a Masters degree in Industrial Engineering.
+              Alongside my academic endeavors, Ive embarked on the exciting
+              journey of learning front-end programming. This dual focus
+              reflects my dedication to expanding my skills and knowledge base in
+              both business and technology domains. I am eager to leverage this
+              diverse expertise to drive innovation and make meaningful contributions
+              in the fields of business management and industrial engineering.
+            </p>
+            <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+              <div className="flex items-center justify-center sm:justify-start">
+                <p className="font-body text-lg font-semibold uppercase text-grey-20">
+                  Connect with me
+                </p>
+                <div className="hidden sm:block">
+                  <i className="bx bx-chevron-right text-2xl text-primary"></i>
+                </div>
+              </div>
+              {/* <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+                <a href="https://www.linkedin.com/in/erica-rodríguez" className="pl-4">
+                  <i className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
+                </a>
+                <a href="https://github.com/Baalerica" className="pl-4">
+                  <i className="bx bxl-github text-2xl text-primary hover:text-yellow"></i>
+                </a>
+            </div>*/}
+            </div>
+          </div>
+          <div className="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+            <div>
+              <div className="flex items-end justify-between">
+                <h4 className="font-body font-semibold uppercase text-black">
+                  HTML & CSS
+                </h4>
+                <h3 className="font-body text-3xl font-bold text-primary">85%</h3>
+              </div>
+              <div className="mt-2 h-3 w-full rounded-full bg-lila">
+                <div className="h-3 rounded-full bg-primary" style={{ width: "98%" }}></div>
+              </div>
+            </div>
+            <div className="pt-6">
+              <div className="flex items-end justify-between">
+                <h4 className="font-body font-semibold uppercase text-black">Python</h4>
+                <h3 className="font-body text-3xl font-bold text-primary">70%</h3>
+              </div>
+              <div className="mt-2 h-3 w-full rounded-full bg-lila">
+                <div className="h-3 rounded-full bg-primary" style={{ width: "98%" }}></div>
+              </div>
+            </div>
+            <div className="pt-6">
+              <div className="flex items-end justify-between">
+                <h4 className="font-body font-semibold uppercase text-black">
+                  Javascript
+                </h4>
+                <h3 className="font-body text-3xl font-bold text-primary">98%</h3>
+              </div>
+              <div className="mt-2 h-3 w-full rounded-full bg-lila">
+                <div className="h-3 rounded-full bg-primary" style={{ width: "98%" }}></div>
+              </div>
+            </div>
+            <div className="pt-6">
+              <div className="flex items-end justify-between">
+                <h4 className="font-body font-semibold uppercase text-black">Figma</h4>
+                <h3 className="font-body text-3xl font-bold text-primary">91%</h3>
+              </div>
+              <div className="mt-2 h-3 w-full rounded-full bg-lila">
+                <div className="h-3 rounded-full bg-primary" style={{ width: "91%" }}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container py-16 md:py-20" id="services">
+        <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+          Here's what I'm good at
+        </h2>
+        <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+          These are the services I offer
+        </h3>
+
+        <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div className="hidden group-hover:block">
+                <Image
+                  src="/icon-development-white.svg"
+                  alt="development icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="block group-hover:hidden">
+                <Image
+                  src="/icon-development-black.svg"
+                  alt="development icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                WEB DEVELOPMENT
+              </h3>
+              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                In progress.
+              </p>
+            </div>
+          </div>
+          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div className="hidden group-hover:block">
+                <Image
+                  src="/icon-content-white.svg"
+                  alt="content marketing icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="block group-hover:hidden">
+                <Image
+                  src="/icon-content-black.svg"
+                  alt="content marketing icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Project Management
+              </h3>
+              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                In progress.
+              </p>
+            </div>
+          </div>
+          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div className="hidden group-hover:block">
+                <Image
+                  src="/icon-mobile-white.svg"
+                  alt="Mobile Application icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="block group-hover:hidden">
+                <Image
+                  src="/icon-mobile-black.svg"
+                  alt="Mobile Application icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Social media management
+              </h3>
+              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                In progress.
+              </p>
+            </div>
+          </div>
+          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div className="hidden group-hover:block">
+                <Image
+                  src="/icon-email-white.svg"
+                  alt="Email Marketing icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="block group-hover:hidden">
+                <Image
+                  src="/icon-email-black.svg"
+                  alt="Email Marketing icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Accounting services
+              </h3>
+              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                In progress.
+              </p>
+            </div>
+          </div>
+          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div className="hidden group-hover:block">
+                <Image
+                  src="/icon-design-white.svg"
+                  alt="Theme Design icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="block group-hover:hidden">
+                <Image
+                  src="/icon-design-black.svg"
+                  alt="Theme Design icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Web Design
+              </h3>
+              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                In progress.
+              </p>
+            </div>
+          </div>
+          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+            <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div className="hidden group-hover:block">
+                <Image
+                  src="/icon-graphics-white.svg"
+                  alt="Graphic Design icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <div className="block group-hover:hidden">
+                <Image
+                  src="/icon-graphics-black.svg"
+                  alt="Graphic Design icon"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                Consultancy
+              </h3>
+              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                In progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container py-16 md:py-20" id="portfolio">
         <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
           Check out my Portfolio
