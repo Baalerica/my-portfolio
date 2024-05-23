@@ -366,7 +366,7 @@ export default function Home() {
           My work experience
         </h2>
         <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-          Here's what I did before freelancing
+          Here&apos;s what I did before freelancing
         </h3>
 
         <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
@@ -485,7 +485,7 @@ export default function Home() {
 
 
       <div className="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
-        style={{ backgroundImage: 'url(/experience-figure.png)' }}
+        style={{ backgroundImage: "url(/experience-figure.png)" }}
         id="statistics">
         <div className="container">
           <div className="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full">
