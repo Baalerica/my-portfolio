@@ -24,7 +24,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div className="bg-custom-purple">
+      <div className="h-screen w-full"
+        style={{ backgroundImage: "url(/fondo-azul.jpg)", backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
         <header className="absolute inset-x-0 top-0 z-50">
           <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
@@ -62,25 +64,25 @@ export default function Home() {
               </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#about" className="text-sm font-semibold leading-6 text-gray-900">
                 About
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#services" className="text-sm font-semibold leading-6 text-gray-900">
                 Services
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#portfolio" className="text-sm font-semibold leading-6 text-gray-900">
                 Portfolio
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Clients
+              <a href="#clients" className="text-sm font-semibold leading-6 text-gray-900">
+                Projects
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#work" className="text-sm font-semibold leading-6 text-gray-900">
                 Work
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#statistics" className="text-sm font-semibold leading-6 text-gray-900">
                 Statistics
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900">
                 Contact
               </a>
             </div>
@@ -122,46 +124,46 @@ export default function Home() {
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
                     <a
-                      href="#"
+                      href="#about"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       About
                     </a>
                     <a
-                      href="#"
+                      href="#services"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Services
                     </a>
                     <a
-                      href="#"
+                      href="#portfolio"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Portfolio
                     </a>
                     <a
-                      href="#"
+                      href="#clients"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Clients
                     </a>
                     <a
-                      href="#"
+                      href="#work"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Work
                     </a>
                     <a
-                      href="#"
+                      href="#statistics"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Statistics
                     </a>
                     <a
-                      href="#"
+                      href="#contact"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
-                      Contact
+                      Projects
                     </a>
                   </div>
                   <div className="py-6">
@@ -196,7 +198,7 @@ export default function Home() {
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Hello I&apos;m Baalerica!
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-black">
                 Let&apos;s connect!
               </p>
               <div className="mt-4 flex justify-center space-x-4">
@@ -557,12 +559,12 @@ export default function Home() {
         <div className="container py-16 md:py-20">
           <div className="mx-auto w-full sm:w-3/4 lg:w-full">
             <h5 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-              My latest clients
+              My latest projects
             </h5>
             <div className="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
               <span className="m-8 block">
                 <Image
-                  src="/logo-citc.png"
+                  src="/icon-cavy.png"
                   alt="client logo"
                   width={20}
                   height={20}
@@ -571,17 +573,7 @@ export default function Home() {
               </span>
               <span className="m-8 block">
                 <Image
-                  src="/logo-citc.png"
-                  alt="client logo"
-                  width={20}
-                  height={20}
-                  className="mx-auto block h-12 w-auto"
-                />
-              </span>
-
-              <span className="m-8 block">
-                <Image
-                  src="/logo-citc.png"
+                  src="/icon-fuzze.png"
                   alt="client logo"
                   width={20}
                   height={20}
@@ -591,7 +583,17 @@ export default function Home() {
 
               <span className="m-8 block">
                 <Image
-                  src="/logo-citc.png"
+                  src="/icon-microforge.png"
+                  alt="client logo"
+                  width={20}
+                  height={20}
+                  className="mx-auto block h-12 w-auto"
+                />
+              </span>
+
+              <span className="m-8 block">
+                <Image
+                  src="/icon-ecoflow.png"
                   alt="client logo"
                   width={20}
                   height={20}
@@ -600,7 +602,16 @@ export default function Home() {
               </span>
               <span className="m-8 block">
                 <Image
-                  src="/logo-citc.png"
+                  src="/icon-cyberguard.png"
+                  alt="client logo"
+                  width={20}
+                  height={20}
+                  className="mx-auto block h-12 w-auto"
+                />
+              </span>
+              <span className="m-8 block">
+                <Image
+                  src="/icon-optimia.png"
                   alt="client logo"
                   width={20}
                   height={20}
@@ -627,10 +638,10 @@ export default function Home() {
               <div className="flex justify-center md:justify-start">
                 <span className="m-8 block">
                   <Image
-                    src="/logo-citc.png"
+                    src="/logo-imbera.png"
                     alt="client logo"
-                    width={20}
-                    height={20}
+                    width={200}
+                    height={200}
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
@@ -664,8 +675,8 @@ export default function Home() {
                   <Image
                     src="/logo-citc.png"
                     alt="client logo"
-                    width={20}
-                    height={20}
+                    width={200}
+                    height={200}
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
@@ -698,10 +709,10 @@ export default function Home() {
               <div className="flex justify-center md:justify-start">
                 <span className="m-8 block">
                   <Image
-                    src="/logo-citc.png"
+                    src="/logo-imbera.png"
                     alt="client logo"
-                    width={20}
-                    height={20}
+                    width={200}
+                    height={200}
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
@@ -743,7 +754,7 @@ export default function Home() {
               <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                 <div className="w-32">
                   <Image
-                    src="/logo-citc.png"
+                    src="/icon-project.svg"
                     alt="client logo"
                     width={20}
                     height={20}
@@ -763,7 +774,7 @@ export default function Home() {
               <div class="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                 <div>
                   <Image
-                    src="/logo-citc.png"
+                    src="/icon-award.svg"
                     alt="client logo"
                     width={20}
                     height={20}
@@ -784,7 +795,7 @@ export default function Home() {
                 className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                 <div>
                   <Image
-                    src="/logo-citc.png"
+                    src="/icon-happy.svg"
                     alt="client logo"
                     width={20}
                     height={20}
@@ -805,7 +816,7 @@ export default function Home() {
                 className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                 <div>
                   <Image
-                    src="/logo-citc.png"
+                    src="/icon-puzzle.svg"
                     alt="client logo"
                     width={20}
                     height={20}
@@ -864,8 +875,8 @@ export default function Home() {
                 <span className="block pt-2 font-body text-grey-20">In proces.</span>
               </div>
             </a>
-            <a href="/post" className="shadow">
-              <div style={{ backgroundImage: "url(/steam-erythea.png)" }}
+            <a href="https://osu.ppy.sh/users/14718815" className="shadow">
+              <div style={{ backgroundImage: "url(/osu.png)" }}
                 className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
                 <span
                   className="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"></span>
