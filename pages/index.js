@@ -18,13 +18,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Portfolio | Erica Rdz</title>
         <meta charSet="utf-8" />
         <meta name="description" content="Un chingo de cosas" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div className="bg-white">
+      <div className="bg-custom-purple">
         <header className="absolute inset-x-0 top-0 z-50">
           <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
@@ -190,15 +190,16 @@ export default function Home() {
               }}
             ></div>
           </div>
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="text-center">
+
+          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 flex items-center">
+            <div className="text-center flex-1">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Hello I&apos;m Baalerica!
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Let&apos;s connect!
               </p>
-              <div>
+              <div className="mt-4 flex justify-center space-x-4">
                 <FacebookShareButton url={"http://localhost:3000"}>
                   <FacebookIcon size={32} round />
                 </FacebookShareButton>
@@ -216,7 +217,16 @@ export default function Home() {
                 </LinkedinShareButton>
               </div>
             </div>
+            <div className="flex-1">
+              <img src="/blog-author.jpg"
+                width={700}
+                height={600}
+                alt="Description of the image"
+                className="w-full h-auto rounded-full border-2 border-purple-500"
+              />
+            </div>
           </div>
+
           <div
             className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
             aria-hidden="true"
