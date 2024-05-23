@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from 'next/link';
 import Image from "next/image";
 import React from "react";
 import {
@@ -13,6 +14,7 @@ import {
   LinkedinShareButton,
   LinkedinIcon,
 } from "next-share";
+
 
 export default function Home() {
   return (
@@ -53,7 +55,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  aria-hidden="false"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -87,9 +89,11 @@ export default function Home() {
               </a>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Log in <span aria-hidden="false">&rarr;</span>
-              </a>
+              <Link href="/login" legacyBehavior>
+                <a className="text-sm font-semibold leading-6 text-gray-900">
+                  Log in <span aria-hidden="true">&rarr;</span>
+                </a>
+              </Link>
             </div>
           </nav>
           <div className="lg:hidden" role="dialog" aria-modal="true">
@@ -115,7 +119,7 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    aria-hidden="false"
+                    aria-hidden="true"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -169,7 +173,7 @@ export default function Home() {
                   </div>
                   <div className="py-6">
                     <a
-                      href="#"
+                      href="/#loging.js"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Log in
