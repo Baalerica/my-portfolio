@@ -53,7 +53,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  aria-hidden="true"
+                  aria-hidden="false"
                 >
                   <path
                     strokeLinecap="round"
@@ -88,7 +88,7 @@ export default function Home() {
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Log in <span aria-hidden="true">&rarr;</span>
+                Log in <span aria-hidden="false">&rarr;</span>
               </a>
             </div>
           </nav>
@@ -106,6 +106,7 @@ export default function Home() {
                     height={32}
                   />
                 </a>
+
                 <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
                   <span className="sr-only">Close menu</span>
                   <svg
@@ -114,7 +115,7 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    aria-hidden="true"
+                    aria-hidden="false"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
