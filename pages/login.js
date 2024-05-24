@@ -103,12 +103,13 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <h1>Log In</h1>
+                        <LoginButton />
+                    </div>
                 </header>
             </div>
-            <div>
-                <h1>Next.js + NextAuth</h1>
-                <LoginButton />
-            </div>
+
         </>
     );
 }

@@ -87,6 +87,13 @@ export default function Home() {
               <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900">
                 Contact
               </a>
+              <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                <Link href="/stripe" legacyBehavior>
+                  <a className="text-sm font-semibold leading-6 text-gray-900">
+                    Hire me! <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </Link>
+              </div>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link href="/login" legacyBehavior>
@@ -170,6 +177,14 @@ export default function Home() {
                     >
                       Projects
                     </a>
+                    <div className="py-6">
+                      <Link href="/stripe" legacyBehavior>
+                        <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                          Hire me! <span aria-hidden="true">&rarr;</span>
+                        </a>
+                      </Link>
+
+                    </div>
                   </div>
                   <div className="py-6">
                     <Link href="/login" legacyBehavior>

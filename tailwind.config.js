@@ -14,8 +14,13 @@ module.exports = {
       },
       colors: {
         'custom-purple': '#8e6995',
+        'custom-blue': '#cfb1ff',
+        'custom-bluee': '#e8d8ff',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
+
