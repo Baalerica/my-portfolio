@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from 'next/link';
 import Image from "next/image";
 import React from "react";
+import LoginButton from "@/components/LoginButton";
 
 export default function Home() {
     return (
@@ -103,6 +104,10 @@ export default function Home() {
                         </div>
                     </div>
                 </header>
+            </div>
+            <div>
+                <h1>Next.js + NextAuth</h1>
+                <LoginButton />
             </div>
         </>
     );

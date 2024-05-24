@@ -1,10 +1,14 @@
 import "@/styles/globals.css";
-import Script from 'next/script';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-  <Script
-    src="https://cdn.tailwindcss.com"
-    strategy="beforeInteractive"
-  />
+import { SessionProvider } from "next-auth/react"
+
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  return (
+    <SessionProvider session={session}>
+      <Component {...pageProps} />
+    </SessionProvider>
+  )
 }
