@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Portfolio | Erica Rdz</title>
+                <title>Log in | Erica Rdz</title>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Un chingo de cosas" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
