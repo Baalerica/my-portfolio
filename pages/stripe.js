@@ -16,7 +16,7 @@ export default function Home() {
 
             <div className="bg-custom-blue py-24 sm:py-32">
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link href="/index" legacyBehavior>
+                    <Link href="/" legacyBehavior>
                         <a className="text-sm font-semibold leading-6 text-gray-900">
                             Back <span aria-hidden="true">&rarr;</span>
                         </a>

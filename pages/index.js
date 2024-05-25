@@ -61,30 +61,30 @@ export default function Home() {
               </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-              <a href="#about" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#about" className="text-sm font-semibold leading-6 text-white">
                 About
               </a>
-              <a href="#services" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#services" className="text-sm font-semibold leading-6 text-white">
                 Services
               </a>
-              <a href="#portfolio" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#portfolio" className="text-sm font-semibold leading-6 text-white">
                 Portfolio
               </a>
-              <a href="#clients" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#clients" className="text-sm font-semibold leading-6 text-white">
                 Projects
               </a>
-              <a href="#work" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#work" className="text-sm font-semibold leading-6 text-white">
                 Work
               </a>
-              <a href="#statistics" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#statistics" className="text-sm font-semibold leading-6 text-white">
                 Statistics
               </a>
-              <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#contact" className="text-sm font-semibold leading-6 text-white">
                 Contact
               </a>
               <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                 <Link href="/stripe" legacyBehavior>
-                  <a className="text-sm font-semibold leading-6 text-gray-900">
+                  <a className="text-sm font-semibold leading-6 text-white">
                     Hire me! <span aria-hidden="true">&rarr;</span>
                   </a>
                 </Link>
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link href="/login" legacyBehavior>
-                <a className="text-sm font-semibold leading-6 text-gray-900">
+                <a className="text-sm font-semibold leading-6 text-white">
                   Log in <span aria-hidden="true">&rarr;</span>
                 </a>
               </Link>
@@ -126,49 +126,49 @@ export default function Home() {
                   <div className="space-y-2 py-6">
                     <a
                       href="#about"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                     >
                       About
                     </a>
                     <a
                       href="#services"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                     >
                       Services
                     </a>
                     <a
                       href="#portfolio"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                     >
                       Portfolio
                     </a>
                     <a
                       href="#clients"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                     >
                       Clients
                     </a>
                     <a
                       href="#work"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                     >
                       Work
                     </a>
                     <a
                       href="#statistics"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                     >
                       Statistics
                     </a>
                     <a
                       href="#contact"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                     >
                       Projects
                     </a>
                     <div className="py-6">
                       <Link href="/stripe" legacyBehavior>
-                        <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50">
                           Hire me! <span aria-hidden="true">&rarr;</span>
                         </a>
                       </Link>
@@ -176,7 +176,7 @@ export default function Home() {
                   </div>
                   <div className="py-6">
                     <Link href="/login" legacyBehavior>
-                      <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50">
                         Log in <span aria-hidden="true">&rarr;</span>
                       </a>
                     </Link>
@@ -202,7 +202,7 @@ export default function Home() {
 
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 flex items-center">
             <div className="text-center flex-1">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
                 Hello I&apos;m Baalerica!
               </h1>
               <p className="mt-6 text-lg leading-8 text-black">

@@ -55,7 +55,7 @@ export default function Home() {
                             </button>
                         </div>
                         <div className="hidden lg:flex lg:gap-x-12">
-                            <Link href="/index" legacyBehavior>
+                            <Link href="/" legacyBehavior>
                                 <a className="text-sm font-semibold leading-6 text-gray-900">
                                     Home <span aria-hidden="true">&rarr;</span>
                                 </a>
