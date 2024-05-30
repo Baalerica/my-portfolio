@@ -22,6 +22,11 @@ export const authOptions = {
 
         // ...add more providers here
     ],
+
+    debug: true,
+    pages: {
+        error: '/auth/error', // Redirige a esta página en caso de error
+    },
 }
 
 export default NextAuth(authOptions)
