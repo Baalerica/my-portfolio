@@ -1,35 +1,14 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    theme: {
-      extend: {
-        gridTemplateRows: {
-          '[auto,auto,1fr]': 'auto auto 1fr',
-        },
-      },
-    },
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Radio, RadioGroup } from '@headlessui/react'
 
 const product = {
-    name: 'Basic Tee 6-Pack',
-    price: '$192',
+    name: 'Video game',
+    price: '$600',
     href: '#',
     breadcrumbs: [
-        { id: 1, name: 'Men', href: '#' },
-        { id: 2, name: 'Clothing', href: '#' },
+        { id: 1, name: 'Accounting', href: '#' },
+        { id: 2, name: 'Web development', href: '#' },
     ],
     images: [
         {
@@ -64,16 +43,19 @@ const product = {
         { name: '2XL', inStock: true },
         { name: '3XL', inStock: true },
     ],
-    description:
-        'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
-    highlights: [
-        'Hand cut and sewn locally',
-        'Dyed with our proprietary colors',
-        'Pre-washed & pre-shrunk',
-        'Ultra-soft 100% cotton',
+    description: [
+        "Are you an individual and need help with your finances?",
+        "Are you afraid of sat?",
+        "You have no idea what the tax regime is?",
+        "I can help you with that and more...",
     ],
-    details:
-        'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
+    highlights: [
+        'Annual and monthly declaration',
+        'Invoice management',
+        'Registration and cancellation of the tax regime',
+        'Personalized attention',
+    ],
+
 }
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
@@ -317,13 +299,7 @@ export default function Example() {
                             </div>
                         </div>
 
-                        <div className="mt-10">
-                            <h2 className="text-sm font-medium text-gray-900">Details</h2>
 
-                            <div className="mt-4 space-y-6">
-                                <p className="text-sm text-gray-600">{product.details}</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
