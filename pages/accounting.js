@@ -9,48 +9,37 @@ const product = {
     price: '$600',
     href: '#',
     breadcrumbs: [
-        { id: 1, name: 'Video game', href: '/videogame' },
-        { id: 2, name: 'Web development', href: '/webdevelopment' },
+        { id: 1, name: 'Home', href: '/' },
+        { id: 2, name: 'Video game', href: '/videogame' },
+        { id: 3, name: 'Web development', href: '/webdevelopment' },
     ],
     images: [
         {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
-            alt: 'Two each of gray, white, and black shirts laying flat.',
+            src: '/mujerembarazada.jpg',
+            alt: 'Mujer con laptop embarazada.',
         },
         {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
-            alt: 'Model wearing plain black basic tee.',
+            src: '/logo-sat.jpeg',
+            alt: 'logo del diablo.',
         },
         {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
-            alt: 'Model wearing plain gray basic tee.',
+            src: '/mujercuentas.jpg',
+            alt: 'Mujer haciendo cuentas.',
         },
         {
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
-            alt: 'Model wearing plain white basic tee.',
+            src: '/hombrepensando.jpg',
+            alt: 'Hombre pensando.',
         },
     ],
-    colors: [
-        { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
-        { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
-        { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
-    ],
-    sizes: [
-        { name: 'XXS', inStock: false },
-        { name: 'XS', inStock: true },
-        { name: 'S', inStock: true },
-        { name: 'M', inStock: true },
-        { name: 'L', inStock: true },
-        { name: 'XL', inStock: true },
-        { name: '2XL', inStock: true },
-        { name: '3XL', inStock: true },
-    ],
+
     description: [
-        "Are you an individual and need help with your finances?",
-        "Are you afraid of sat?",
-        "You have no idea what the tax regime is?",
-        "I can help you with that and more...",
+        'Are you an individual and need help with your finances?',
+        'Are you afraid of sat?',
+        'You have no idea what the tax regime is?',
+        'I can help you with that and more...',
     ],
+
+
     highlights: [
         'Annual and monthly declaration',
         'Invoice management',
@@ -59,15 +48,13 @@ const product = {
     ],
 
 }
-const reviews = { href: '#', average: 4, totalCount: 117 }
+const reviews = { average: 4, totalCount: 117 }
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
-    const [selectedColor, setSelectedColor] = useState(product.colors[0])
-    const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 
     return (
         <div className="bg-white">
@@ -115,7 +102,8 @@ export default function Example() {
                             <img
                                 src={product.images[1].src}
                                 alt={product.images[1].alt}
-                                className="h-full w-full object-cover object-center"
+                                className="h-full w-full object-contain"
+
                             />
                         </div>
                         <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
@@ -155,7 +143,7 @@ export default function Example() {
                                         <StarIcon
                                             key={rating}
                                             className={classNames(
-                                                reviews.average > rating ? 'text-gray-900' : 'text-gray-200',
+                                                'text-gray-900',
                                                 'h-5 w-5 flex-shrink-0'
                                             )}
                                             aria-hidden="true"
@@ -170,103 +158,6 @@ export default function Example() {
                         </div>
 
                         <form className="mt-10">
-                            {/* Colors */}
-                            <div>
-                                <h3 className="text-sm font-medium text-gray-900">Color</h3>
-
-                                <fieldset aria-label="Choose a color" className="mt-4">
-                                    <RadioGroup value={selectedColor} onChange={setSelectedColor} className="flex items-center space-x-3">
-                                        {product.colors.map((color) => (
-                                            <Radio
-                                                key={color.name}
-                                                value={color}
-                                                aria-label={color.name}
-                                                className={({ focus, checked }) =>
-                                                    classNames(
-                                                        color.selectedClass,
-                                                        focus && checked ? 'ring ring-offset-1' : '',
-                                                        !focus && checked ? 'ring-2' : '',
-                                                        'relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none'
-                                                    )
-                                                }
-                                            >
-                                                <span
-                                                    aria-hidden="true"
-                                                    className={classNames(
-                                                        color.class,
-                                                        'h-8 w-8 rounded-full border border-black border-opacity-10'
-                                                    )}
-                                                />
-                                            </Radio>
-                                        ))}
-                                    </RadioGroup>
-                                </fieldset>
-                            </div>
-
-                            {/* Sizes */}
-                            <div className="mt-10">
-                                <div className="flex items-center justify-between">
-                                    <h3 className="text-sm font-medium text-gray-900">Size</h3>
-                                    <a href="#" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                                        Size guide
-                                    </a>
-                                </div>
-
-                                <fieldset aria-label="Choose a size" className="mt-4">
-                                    <RadioGroup
-                                        value={selectedSize}
-                                        onChange={setSelectedSize}
-                                        className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4"
-                                    >
-                                        {product.sizes.map((size) => (
-                                            <Radio
-                                                key={size.name}
-                                                value={size}
-                                                disabled={!size.inStock}
-                                                className={({ focus }) =>
-                                                    classNames(
-                                                        size.inStock
-                                                            ? 'cursor-pointer bg-white text-gray-900 shadow-sm'
-                                                            : 'cursor-not-allowed bg-gray-50 text-gray-200',
-                                                        focus ? 'ring-2 ring-indigo-500' : '',
-                                                        'group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6'
-                                                    )
-                                                }
-                                            >
-                                                {({ checked, focus }) => (
-                                                    <>
-                                                        <span>{size.name}</span>
-                                                        {size.inStock ? (
-                                                            <span
-                                                                className={classNames(
-                                                                    checked ? 'border-indigo-500' : 'border-transparent',
-                                                                    focus ? 'border' : 'border-2',
-                                                                    'pointer-events-none absolute -inset-px rounded-md'
-                                                                )}
-                                                                aria-hidden="true"
-                                                            />
-                                                        ) : (
-                                                            <span
-                                                                aria-hidden="true"
-                                                                className="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200"
-                                                            >
-                                                                <svg
-                                                                    className="absolute inset-0 h-full w-full stroke-2 text-gray-200"
-                                                                    viewBox="0 0 100 100"
-                                                                    preserveAspectRatio="none"
-                                                                    stroke="currentColor"
-                                                                >
-                                                                    <line x1={0} y1={100} x2={100} y2={0} vectorEffect="non-scaling-stroke" />
-                                                                </svg>
-                                                            </span>
-                                                        )}
-                                                    </>
-                                                )}
-                                            </Radio>
-                                        ))}
-                                    </RadioGroup>
-                                </fieldset>
-                            </div>
 
                             <button
                                 type="submit"

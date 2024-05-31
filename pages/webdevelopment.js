@@ -3,12 +3,13 @@ import { StarIcon } from '@heroicons/react/20/solid'
 import { Radio, RadioGroup } from '@headlessui/react'
 
 const product = {
-    name: 'Video game',
+    name: 'Web Development',
     price: '$600',
     href: '#',
     breadcrumbs: [
-        { id: 1, name: 'Accounting', href: '#' },
-        { id: 2, name: 'Web development', href: '#' },
+        { id: 1, name: 'Home', href: '/' },
+        { id: 2, name: 'Accounting', href: '/accounting' },
+        { id: 3, name: 'Video Game', href: '/videogame' },
     ],
     images: [
         {
