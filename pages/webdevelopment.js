@@ -6,49 +6,49 @@ import { Radio, RadioGroup } from '@headlessui/react'
 
 const product = {
     name: 'Web Development',
-    price: '$600',
+    price: '$5,000',
     href: '#',
     breadcrumbs: [
         { id: 1, name: 'Home', href: '/' },
         { id: 2, name: 'Accounting', href: '/accounting' },
-        { id: 3, name: 'Video Games', href: '/videogames' },
+        { id: 3, name: 'Video Games', href: '/videogame' },
     ],
     images: [
         {
-            src: '/mujerembarazada.jpg',
-            alt: 'Mujer con laptop embarazada.',
+            src: '/diseño1.jpg',
+            alt: 'Mujer pintada.',
         },
         {
-            src: '/logo-sat.jpeg',
-            alt: 'logo del diablo.',
+            src: '/diseño 2.jpg',
+            alt: 'Codigo.',
         },
         {
-            src: '/mujercuentas.jpg',
-            alt: 'Mujer haciendo cuentas.',
+            src: '/diseño3.jpg',
+            alt: 'Persona maquetando.',
         },
         {
-            src: '/hombrepensando.jpg',
-            alt: 'Hombre pensando.',
+            src: '/diseño 4.jpg',
+            alt: 'Robot pintado.',
         },
     ],
 
     description: [
-        'Are you an individual and need help with your finances?',
-        'Are you afraid of sat?',
-        'You have no idea what the tax regime is?',
+        'Do you want to create your own website and do not know how?',
+        'Do you need to make a landing page?',
+        'Do you want your business to reach more people?',
         'I can help you with that and more...',
     ],
 
 
     highlights: [
-        'Annual and monthly declaration',
-        'Invoice management',
-        'Registration and cancellation of the tax regime',
-        'Personalized attention',
+        'Layout in Figma',
+        'Design from scratch',
+        'Fully customized',
+        'Designs for e-commerce, portfolios, blogs, etc.',
     ],
 
 }
-const reviews = { average: 4, totalCount: 117 }
+const reviews = { average: 4, totalCount: 350 }
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
