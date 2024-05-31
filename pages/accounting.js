@@ -57,7 +57,7 @@ function classNames(...classes) {
 export default function Example() {
 
     return (
-        <div className="bg-white">
+        <div className="bg-custom-image">
             <div className="pt-6">
                 <nav aria-label="Breadcrumb">
                     <ol role="list" className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
