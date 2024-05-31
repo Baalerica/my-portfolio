@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Radio, RadioGroup } from '@headlessui/react'
-import Link from 'next/link';
+
 
 
 const product = {
@@ -9,8 +9,8 @@ const product = {
     price: '$600',
     href: '#',
     breadcrumbs: [
-        { id: 1, name: 'Video game', href: '#' },
-        { id: 2, name: 'Web development', href: '#' },
+        { id: 1, name: 'Video game', href: '/videogame' },
+        { id: 2, name: 'Web development', href: '/webdevelopment' },
     ],
     images: [
         {

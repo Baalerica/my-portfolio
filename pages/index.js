@@ -83,7 +83,7 @@ export default function Home() {
                 Contact
               </a>
               <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                <Link href="/stripe" legacyBehavior>
+                <Link href="/accounting" legacyBehavior>
                   <a className="text-sm font-semibold leading-6 text-white">
                     Hire me! <span aria-hidden="true">&rarr;</span>
                   </a>
