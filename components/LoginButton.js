@@ -1,8 +1,11 @@
-
 import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function LoginButton() {
-    const { data: session } = useSession()
+    const { data: session, status } = useSession()
+    if (status === "loading") {
+        return <p>Loading...</p>
+    }
+
     if (session) {
         console.log(session)
         return (

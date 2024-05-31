@@ -5,7 +5,6 @@ import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import clientPromise from "@/libs/mongodb";
 
 export const authOptions = {
-    // Configura uno o más proveedores de autenticación
     adapter: MongoDBAdapter(clientPromise),
     providers: [
         GithubProvider({
@@ -16,7 +15,6 @@ export const authOptions = {
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         }),
-        // Puedes añadir más proveedores aquí
     ],
     debug: true,
     pages: {
@@ -24,8 +22,9 @@ export const authOptions = {
         signOut: '/auth/signout',
         error: '/auth/error',
         verifyRequest: '/auth/verify-request',
-        newUser: "https://my-portfolio-eosin-pi.vercel.app/api/auth/error"
+        newUser: "/auth/new-user",
     },
 };
 
 export default NextAuth(authOptions);
+
