@@ -6,7 +6,7 @@ import { Radio, RadioGroup } from '@headlessui/react'
 
 const product = {
     name: 'Video Games',
-    price: '$600',
+    price: '$200 per hour',
     href: '#',
     breadcrumbs: [
         { id: 1, name: 'Home', href: '/' },
@@ -15,40 +15,40 @@ const product = {
     ],
     images: [
         {
-            src: '/mujerembarazada.jpg',
-            alt: 'Mujer con laptop embarazada.',
+            src: '/ahri.jpg',
+            alt: 'Skin ahri mamada.',
         },
         {
-            src: '/logo-sat.jpeg',
-            alt: 'logo del diablo.',
+            src: '/l4d.jpg',
+            alt: 'Left 4 Dead.',
         },
         {
-            src: '/mujercuentas.jpg',
-            alt: 'Mujer haciendo cuentas.',
+            src: '/rotmg.png',
+            alt: 'Realm of the mad god.',
         },
         {
-            src: '/hombrepensando.jpg',
-            alt: 'Hombre pensando.',
+            src: '/minecraft.jpg',
+            alt: 'Minecraft.',
         },
     ],
 
     description: [
-        'Are you an individual and need help with your finances?',
-        'Are you afraid of sat?',
-        'You have no idea what the tax regime is?',
+        'Do you want to play video games and dont have a partner?',
+        'Dont you play multiplayer games because theyre boring?',
+        'Do you want company while you play?',
         'I can help you with that and more...',
     ],
 
 
     highlights: [
-        'Annual and monthly declaration',
-        'Invoice management',
-        'Registration and cancellation of the tax regime',
-        'Personalized attention',
+        'I play any game',
+        'Competitive or casual mode',
+        'Company and entertaining talks',
+        '0% Toxic',
     ],
 
 }
-const reviews = { average: 4, totalCount: 117 }
+const reviews = { average: 4, totalCount: 123 }
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
