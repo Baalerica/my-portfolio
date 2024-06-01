@@ -1,117 +1,142 @@
-import Head from "next/head";
+import React from 'react';
 import Link from 'next/link';
-import Image from "next/image";
-import React from "react";
-import LoginButton from "@/components/LoginButton";
 
-export default function Home() {
+const SignIn = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+    };
+
     return (
-        <>
-            <Head>
-                <title>Log in | Erica Rdz</title>
-                <meta charSet="utf-8" />
-                <meta name="description" content="Un chingo de cosas" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            </Head>
-
-            <div
-                className="h-screen w-full"
-                style={{ backgroundImage: "url(/fondo-azul.jpg)", backgroundSize: 'cover', backgroundPosition: 'center' }}
-            >
-                <header className="absolute inset-x-0 top-0 z-50">
-                    <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-                        <div className="flex lg:flex-1">
-                            <a href="#" className="-m-1.5 p-1.5">
-                                <span className="sr-only">Baalerica</span>
-                                <Image
-                                    className="h-8 w-auto"
-                                    src="/logo.png"
-                                    alt="Baalerica logo"
-                                    width={32}
-                                    height={32}
-                                />
-                            </a>
-                        </div>
-                        <div className="flex lg:hidden">
-                            <button
-                                type="button"
-                                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                            >
-                                <span className="sr-only">Open main menu</span>
-                                <svg
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth="1.5"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                        <div className="hidden lg:flex lg:gap-x-12">
-                            <Link href="/" legacyBehavior>
-                                <a className="text-sm font-semibold leading-6 text-gray-900">
-                                    Home <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </Link>
-                        </div>
-                    </nav>
-                    <div className="lg:hidden" role="dialog" aria-modal="true">
-                        <div className="fixed inset-0 z-50"></div>
-                        <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                            <div className="flex items-center justify-between">
-                                <Link href="/" legacyBehavior>
-                                    <a className="-m-1.5 p-1.5">
-                                        <span className="sr-only">Baalerica</span>
-                                        <Image
-                                            className="h-8 w-auto"
-                                            src="/logo.png"
-                                            alt="Baalerica logo"
-                                            width={32}
-                                            height={32}
-                                        />
-                                    </a>
-                                </Link>
-                                <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
-                                    <span className="sr-only">Close menu</span>
-                                    <svg
-                                        className="h-6 w-6"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        strokeWidth="1.5"
-                                        stroke="currentColor"
-                                        aria-hidden="true"
-                                    >
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div className="mt-6 flow-root">
-                                <div className="-my-6 divide-y divide-gray-500/10">
-                                    <div className="space-y-2 py-6">
-                                        <Link href="/login" legacyBehavior>
-                                            <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                                                Home <span aria-hidden="true">&rarr;</span>
-                                            </a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h1>Log In</h1>
-                        <LoginButton />
-                    </div>
-                </header>
+        <div className="min-h-screen bg-custom-image flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+            <div className="sm:mx-auto sm:w-full sm:max-w-md">
+                <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                    Sign in
+                </h2>
+                <p className="mt-2 text-center text-sm text-gray-600 max-w">
+                    Or
+                    <br />
+                    <Link href="/signup" legacyBehavior>
+                        <a className="font-medium text-blue-600 hover:text-blue-500">
+                            Create an account
+                        </a>
+                    </Link>
+                </p>
             </div>
 
-        </>
+            <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+                <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+                    <form className="space-y-6" onSubmit={handleSubmit}>
+                        <div>
+                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                                Email address
+                            </label>
+                            <div className="mt-1">
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    autoComplete="email"
+                                    required
+                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                    placeholder="Enter your email address"
+                                />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                                Password
+                            </label>
+                            <div className="mt-1">
+                                <input
+                                    id="password"
+                                    name="password"
+                                    type="password"
+                                    autoComplete="current-password"
+                                    required
+                                    className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                    placeholder="Enter your password"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <input
+                                    id="remember_me"
+                                    name="remember_me"
+                                    type="checkbox"
+                                    className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                                />
+                                <label htmlFor="remember_me" className="ml-2 block text-sm text-gray-900">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button
+                                type="submit"
+                                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            >
+                                Sign in
+                            </button>
+                        </div>
+                    </form>
+                    <div className="mt-6">
+                        <div className="relative">
+                            <div className="absolute inset-0 flex items-center">
+                                <div className="w-full border-t border-gray-300"></div>
+                            </div>
+                            <div className="relative flex justify-center text-sm">
+                                <span className="px-2 bg-gray-100 text-gray-500">Or continue with</span>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 grid grid-cols-3 gap-3">
+                            <div>
+                                <a
+                                    href="#"
+                                    className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                                >
+                                    <img
+                                        className="h-5 w-5"
+                                        src="https://www.svgrepo.com/show/512120/facebook-176.svg"
+                                        alt="Facebook"
+                                    />
+                                </a>
+                            </div>
+                            <div>
+                                <a
+                                    href="#"
+                                    className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                                >
+                                    <img
+                                        className="h-5 w-5"
+                                        src="https://www.svgrepo.com/show/513008/twitter-154.svg"
+                                        alt="Twitter"
+                                    />
+                                </a>
+                            </div>
+                            <div>
+                                <a
+                                    href="#"
+                                    className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                                >
+                                    <img
+                                        className="h-6 w-6"
+                                        src="https://www.svgrepo.com/show/506498/google.svg"
+                                        alt="Google"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
-}
+};
+
+export default SignIn;
