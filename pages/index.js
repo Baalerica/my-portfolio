@@ -360,6 +360,7 @@ export default function Home() {
                 <h4 className="font-body font-semibold uppercase text-black">
                   HTML & CSS
                 </h4>
+                <div className="w-full h-0.5 bg-blue-500"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">85%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -369,6 +370,7 @@ export default function Home() {
             <div className="pt-6">
               <div className="flex items-end justify-between">
                 <h4 className="font-body font-semibold uppercase text-black">Python</h4>
+                <div className="w-full h-0.5 bg-blue-500"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">70%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -380,6 +382,7 @@ export default function Home() {
                 <h4 className="font-body font-semibold uppercase text-black">
                   Javascript
                 </h4>
+                <div className="w-full h-0.5 bg-blue-500"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">98%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -389,6 +392,7 @@ export default function Home() {
             <div className="pt-6">
               <div className="flex items-end justify-between">
                 <h4 className="font-body font-semibold uppercase text-black">Figma</h4>
+                <div className="w-full h-0.5 bg-blue-500"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">91%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -431,9 +435,7 @@ export default function Home() {
               <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
                 WEB DEVELOPMENT
               </h3>
-              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-                In progress.
-              </p>
+
             </div>
           </div>
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
@@ -459,9 +461,7 @@ export default function Home() {
               <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
                 Project Management
               </h3>
-              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-                In progress.
-              </p>
+
             </div>
           </div>
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
@@ -487,9 +487,7 @@ export default function Home() {
               <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
                 Social media management
               </h3>
-              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-                In progress.
-              </p>
+
             </div>
           </div>
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
@@ -515,9 +513,7 @@ export default function Home() {
               <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
                 Accounting services
               </h3>
-              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-                In progress.
-              </p>
+
             </div>
           </div>
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
@@ -543,9 +539,7 @@ export default function Home() {
               <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
                 Web Design
               </h3>
-              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-                In progress.
-              </p>
+
             </div>
           </div>
           <div className="group rounded px-8 py-12 shadow hover:bg-primary">
@@ -571,9 +565,7 @@ export default function Home() {
               <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
                 Consultancy
               </h3>
-              <p className="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-                In progress.
-              </p>
+
             </div>
           </div>
         </div>
@@ -708,7 +700,7 @@ export default function Home() {
 
           <div className="mt-8 flex flex-col text-center md:flex-row md:text-left">
             <div className="md:w-2/5">
-              <div className="flex justify-center md:justify-start">
+              <div className="flex flex-col items-center md:items-start">
                 <span className="m-8 block">
                   <Image
                     src="/logo-imbera.png"
@@ -718,9 +710,7 @@ export default function Home() {
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
-                <div className="relative ml-3 hidden w-full md:block">
-                  <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
-                </div>
+                <div className="w-full h-0.5 bg-blue-500"></div>
               </div>
             </div>
             <div className="md:w-3/5">
@@ -741,9 +731,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="mt-8 flex flex-col text-center md:flex-row md:text-left">
             <div className="md:w-2/5">
-              <div className="flex justify-center md:justify-start">
+              <div className="flex flex-col items-center md:items-start">
                 <span className="m-8 block">
                   <Image
                     src="/logo-citc.png"
@@ -753,9 +744,7 @@ export default function Home() {
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
-                <div className="relative ml-3 hidden w-full md:block">
-                  <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
-                </div>
+                <div className="w-full h-0.5 bg-blue-500"></div>
               </div>
             </div>
             <div className="md:w-3/5">
@@ -767,8 +756,7 @@ export default function Home() {
                   <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                   <div className="md:-mt-1 md:pl-8">
                     <span className="block font-body font-bold text-grey-40">Jun 2023 - Dic 2023</span>
-                    <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Professional
-                      residences</span>
+                    <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Professional residences</span>
                     <div className="pt-2">
                       <span className="block font-body text-black">Managed accounting and organized events.</span>
                     </div>
@@ -777,9 +765,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="mt-8 flex flex-col text-center md:flex-row md:text-left">
             <div className="md:w-2/5">
-              <div className="flex justify-center md:justify-start">
+              <div className="flex flex-col items-center md:items-start">
                 <span className="m-8 block">
                   <Image
                     src="/logo-imbera.png"
@@ -789,9 +778,7 @@ export default function Home() {
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
-                <div className="relative ml-3 hidden w-full md:block">
-                  <span className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
-                </div>
+                <div className="w-full h-0.5 bg-blue-500"></div>
               </div>
             </div>
             <div className="md:w-3/5">
@@ -803,11 +790,9 @@ export default function Home() {
                   <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                   <div className="md:-mt-1 md:pl-8">
                     <span className="block font-body font-bold text-grey-40">Jul 2021 - Dic 2022</span>
-                    <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Warehouse
-                      management</span>
+                    <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Warehouse management</span>
                     <div className="pt-2">
-                      <span className="block font-body text-black">Manage work order inventories with Oracle PeopleSoft
-                        software.</span>
+                      <span className="block font-body text-black">Manage work order inventories with Oracle PeopleSoft software.</span>
                     </div>
                   </div>
                 </div>
@@ -815,6 +800,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
       </div>
 
 
@@ -945,7 +932,7 @@ export default function Home() {
               </div>
               <div className="bg-white py-6 px-5 xl:py-8">
                 <span className="block font-body text-lg font-semibold text-black">Steam</span>
-                <span className="block pt-2 font-body text-grey-20">In proces.</span>
+                <span className="block pt-2 font-body text-grey-20">Add me.</span>
               </div>
             </a>
             <a href="https://osu.ppy.sh/users/14718815" className="shadow">
@@ -958,8 +945,8 @@ export default function Home() {
                   More</span>
               </div>
               <div className="bg-white py-6 px-5 xl:py-8">
-                <span className="block font-body text-lg font-semibold text-black">Steam</span>
-                <span className="block pt-2 font-body text-grey-20">In process.</span>
+                <span className="block font-body text-lg font-semibold text-black">Ossu!</span>
+                <span className="block pt-2 font-body text-grey-20">Follow me.</span>
               </div>
             </a>
           </div>
@@ -1003,7 +990,7 @@ export default function Home() {
               </p>
             </div>
             <p className="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-              (+881) 111 222 333
+              (+614) 3r1c4
             </p>
           </div>
           <div
