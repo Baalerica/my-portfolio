@@ -103,25 +103,13 @@ const SignIn = () => {
                                     <img
                                         className="h-5 w-5"
                                         src="https://www.svgrepo.com/show/512120/facebook-176.svg"
-                                        alt="Facebook"
+                                        alt="Gitgub"
                                     />
                                 </a>
                             </div>
                             <div>
                                 <a
-                                    href="#"
-                                    className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
-                                >
-                                    <img
-                                        className="h-5 w-5"
-                                        src="https://www.svgrepo.com/show/513008/twitter-154.svg"
-                                        alt="Twitter"
-                                    />
-                                </a>
-                            </div>
-                            <div>
-                                <a
-                                    href="#"
+                                    href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=355638716178-ufobsr43b9l8bus6eqhndq3fkf7qcu5s.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fmy-portfolio-eosin-pi.vercel.app%2Fapi%2Fauth%2Fcallback%2Fgoogle&state=F9z6RD-vR8fnvZtVUnx4E0KI-qbKvbsZeV6XdVBliqA&code_challenge=xmSJciQlzDN5D8qKkpYSs1KqY1XFSVCxMmv8dpYEFS0&code_challenge_method=S256&service=lso&o2v=2&ddm=0&flowName=GeneralOAuthFlow"
                                     className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                                 >
                                     <img

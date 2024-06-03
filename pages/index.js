@@ -139,23 +139,6 @@ export default function Home() {
                       <Image className="h-8 w-auto" src="/logo.png" alt="" width={32} height={32} />
                     </a>
 
-                    <button
-                      type="button"
-                      className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      <span className="sr-only">Close menu</span>
-                      <svg
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
                   </div>
                   <div className="mt-6 flow-root">
                     <div className="-my-6 divide-y divide-gray-500/10">
@@ -794,8 +777,8 @@ export default function Home() {
                 <div className="mt-1 flex">
                   <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                   <div className="md:-mt-1 md:pl-8">
-                    <span className="block font-body font-bold text-grey-40">Jun 2023 - Dic 2023</span>
-                    <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Professional residences</span>
+                    <span className="block font-body font-bold text-grey-40">Jun 2024 - Present</span>
+                    <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">Cluster Administrator</span>
                     <div className="pt-2">
                       <span className="block font-body text-black">Managed accounting and organized events.</span>
                     </div>
@@ -903,7 +886,7 @@ export default function Home() {
                 </div>
                 <div className="pt-5 md:pl-5 md:pt-0">
                   <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
-                    8
+                    80
                   </h1>
                   <h4 className="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
                     Happy Clients
