@@ -17,13 +17,7 @@ const SignIn = () => {
                 <meta name="description" content="Login" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
-            <div className="hidden lg:flex lg:gap-x-12">
-                <Link href="/" legacyBehavior>
-                    <a className="text-sm font-semibold leading-6 text-blue-500">
-                        Home <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </Link>
-            </div>
+
             <div className="flex lg:flex lg:gap-x-12">
                 <Link href="/" legacyBehavior>
                     <a className="text-sm font-semibold leading-6 text-blue-500">

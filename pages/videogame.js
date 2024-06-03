@@ -1,8 +1,14 @@
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Radio, RadioGroup } from '@headlessui/react'
+import Head from "next/head";
 
-
+<Head>
+    <title>LogIn</title>
+    <meta charSet="utf-8" />
+    <meta name="description" content="Login" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</Head>
 
 const product = {
     name: 'Video Games',
