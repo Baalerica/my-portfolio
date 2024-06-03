@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Head from "next/head";
 
 const SignIn = () => {
     const handleSubmit = (e) => {
@@ -10,7 +11,20 @@ const SignIn = () => {
     return (
 
         <>
-            <p></p>
+            <Head>
+                <title>LogIn</title>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Login" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
+            <div className="hidden lg:flex lg:gap-x-12">
+                <Link href="/" legacyBehavior>
+                    <a className="text-sm font-semibold leading-6 text-blue-500">
+                        Home <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </Link>
+            </div>
+
             <div className="min-h-screen bg-custom-image flex flex-col justify-center py-12 sm:px-6 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-md">
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -129,7 +143,7 @@ const SignIn = () => {
                                     >
                                         <img
                                             className="h-6 w-6"
-                                            src="https://www.svgrepo.com/show/506498/google.svg"
+                                            src="http://www.w3.org/1999/xlink"
                                             alt="Discord"
                                         />
                                     </a>
