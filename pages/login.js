@@ -24,6 +24,14 @@ const SignIn = () => {
                     </a>
                 </Link>
             </div>
+            <div className="flex lg:flex lg:gap-x-12">
+                <Link href="/" legacyBehavior>
+                    <a className="text-sm font-semibold leading-6 text-blue-500">
+                        Home <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </Link>
+            </div>
+
 
             <div className="min-h-screen bg-custom-image flex flex-col justify-center py-12 sm:px-6 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-md">
