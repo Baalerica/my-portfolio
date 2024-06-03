@@ -90,28 +90,7 @@ export default function Home() {
             </div>
           </nav>
 
-          <button
-            type="button"
-            className="lg:hidden p-2 text-gray-700"
-            onClick={() => setMenuOpen(true)}
-          >
-            <span className="sr-only">Open menu</span>
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-
-
-
           <div>
-
 
             {menuOpen && (
               <div className="lg:hidden" role="dialog" aria-modal="true">
