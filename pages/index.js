@@ -362,7 +362,7 @@ export default function Home() {
                 <h4 className="font-body font-semibold uppercase text-black">
                   HTML & CSS
                 </h4>
-                <div className="w-full h-0.5 bg-blue-500"></div>
+                <div className="w-full h-2 bg-blue-500 my-4 shadow-md rounded-lg transition-opacity duration-300 opacity-75 hover:opacity-100"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">85%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -372,7 +372,7 @@ export default function Home() {
             <div className="pt-6">
               <div className="flex items-end justify-between">
                 <h4 className="font-body font-semibold uppercase text-black">Python</h4>
-                <div className="w-full h-0.5 bg-blue-500"></div>
+                <div className="w-full h-2 bg-blue-500 my-4 shadow-md rounded-lg transition-opacity duration-300 opacity-75 hover:opacity-100"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">70%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -384,7 +384,7 @@ export default function Home() {
                 <h4 className="font-body font-semibold uppercase text-black">
                   Javascript
                 </h4>
-                <div className="w-full h-0.5 bg-blue-500"></div>
+                <div className="w-full h-2 bg-blue-500 my-4 shadow-md rounded-lg transition-opacity duration-300 opacity-75 hover:opacity-100"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">98%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -394,7 +394,7 @@ export default function Home() {
             <div className="pt-6">
               <div className="flex items-end justify-between">
                 <h4 className="font-body font-semibold uppercase text-black">Figma</h4>
-                <div className="w-full h-0.5 bg-blue-500"></div>
+                <div className="w-full h-2 bg-blue-500 my-4 shadow-md rounded-lg transition-opacity duration-300 opacity-75 hover:opacity-100"></div>
                 <h3 className="font-body text-3xl font-bold text-primary">91%</h3>
               </div>
               <div className="mt-2 h-3 w-full rounded-full bg-lila">
@@ -414,7 +414,7 @@ export default function Home() {
         </h3>
 
         <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
-          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div className="group rounded px-8 py-12 shadow hover:bg-custom-purple2">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <Image
@@ -440,7 +440,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div className="group rounded px-8 py-12 shadow hover:bg-custom-purple2">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <Image
@@ -466,7 +466,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div className="group rounded px-8 py-12 shadow hover:bg-custom-purple2">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <Image
@@ -492,7 +492,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div className="group rounded px-8 py-12 shadow hover:bg-custom-purple2">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <Image
@@ -518,7 +518,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div className="group rounded px-8 py-12 shadow hover:bg-custom-purple2">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <Image
@@ -544,7 +544,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+          <div className="group rounded px-8 py-12 shadow hover:bg-custom-purple2">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <Image
