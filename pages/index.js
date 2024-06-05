@@ -276,7 +276,7 @@ export default function Home() {
       </div>
 
       <div className="bg-grey-50" id="about">
-        <div className="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+        <div className="container flex flex-col items-center py-16 md:py-20 lg:flex-row mx-auto">
           <div className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
             <h2 className="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
               Who am I?
@@ -405,7 +405,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container py-16 md:py-20" id="services">
+      <div className="container py-16 md:py-20 mx-auto" id="services">
         <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
           Here&apos;s what I&apos;m good at
         </h2>
@@ -573,7 +573,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container py-16 md:py-20" id="portfolio">
+      <div className="container py-16 md:py-20 mx-auto" id="portfolio">
         <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
           Check out my Portfolio
         </h2>
@@ -623,7 +623,7 @@ export default function Home() {
       </div>
 
       <div className="bg-grey-50" id="clients">
-        <div className="container py-16 md:py-20">
+        <div className="container py-16 md:py-20 mx-auto">
           <div className="mx-auto w-full sm:w-3/4 lg:w-full">
             <h5 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
               My latest projects
@@ -689,7 +689,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container py-16 md:py-20" id="work">
+      <div className="container py-16 md:py-20 mx-auto" id="work">
         <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
           My work experience
         </h2>
@@ -712,14 +712,11 @@ export default function Home() {
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
-                <div className="w-full h-0.5 bg-blue-500"></div>
+                <div className="w-full h-2 bg-blue-500 my-4 shadow-md rounded-lg transition-opacity duration-300 opacity-75 hover:opacity-100"></div>
               </div>
             </div>
             <div className="md:w-3/5">
               <div className="relative flex md:pl-18">
-                <span
-                  className="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
-
                 <div className="mt-1 flex">
                   <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                   <div className="md:-mt-1 md:pl-8">
@@ -746,14 +743,11 @@ export default function Home() {
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
-                <div className="w-full h-0.5 bg-blue-500"></div>
+                <div className="w-full h-2 bg-blue-500 my-4 shadow-md rounded-lg transition-opacity duration-300 opacity-75 hover:opacity-100"></div>
               </div>
             </div>
             <div className="md:w-3/5">
               <div className="relative flex md:pl-18">
-                <span
-                  className="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
-
                 <div className="mt-1 flex">
                   <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                   <div className="md:-mt-1 md:pl-8">
@@ -780,14 +774,11 @@ export default function Home() {
                     className="mx-auto block h-12 w-auto"
                   />
                 </span>
-                <div className="w-full h-0.5 bg-blue-500"></div>
+                <div className="w-full h-2 bg-blue-500 my-4 shadow-md rounded-lg transition-opacity duration-300 opacity-75 hover:opacity-100"></div>
               </div>
             </div>
             <div className="md:w-3/5">
               <div className="relative flex md:pl-18">
-                <span
-                  className="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
-
                 <div className="mt-1 flex">
                   <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                   <div className="md:-mt-1 md:pl-8">
@@ -810,8 +801,9 @@ export default function Home() {
       <div className="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
         style={{ backgroundImage: "url(/experience-figure.png)" }}
         id="statistics">
-        <div className="container">
-          <div className="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full">
+
+        <div className="container mx-auto">
+          <div className="w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-25 xl:py-35">
             <div className="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
               <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                 <div className="w-32">
@@ -833,7 +825,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
+              <div className="flex flex-col items-center justify-center text-center md:flex-row md:text-left">
                 <div>
                   <Image
                     src="/icon-award.svg"
@@ -853,8 +845,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div
-                className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
+              <div className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                 <div>
                   <Image
                     src="/icon-happy.svg"
@@ -874,8 +865,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div
-                className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
+              <div className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
                 <div>
                   <Image
                     src="/icon-puzzle.svg"
@@ -897,10 +887,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+
       </div>
 
       <div className="bg-grey-50" id="blog">
-        <div className="container py-16 md:py-20">
+        <div className="container py-16 md:py-20 mx-auto">
           <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
             I also like to play
           </h2>
@@ -955,7 +946,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container py-16 md:py-20" id="contact">
+      <div className="container py-16 md:py-20 mx-auto" id="contact">
         <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
           Here&apos;s a contact form
         </h2>
