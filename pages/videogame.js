@@ -39,10 +39,7 @@ const product = {
     ],
 
     description: [
-        'Do you want to play video games and dont have a partner?',
-        'Dont you play multiplayer games because theyre boring?',
-        'Do you want company while you play?',
-        'I can help you with that and more...',
+        'Do you want to play video games and dont have a partner? Dont you play multiplayer games because theyre boring? Do you want company while you play? I can help you with that and more...',
     ],
 
 

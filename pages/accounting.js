@@ -40,10 +40,7 @@ const product = {
     ],
 
     description: [
-        'Are you an individual and need help with your finances?',
-        'Are you afraid of sat?',
-        'You have no idea what the tax regime is?',
-        'I can help you with that and more...',
+        'Are you an individual and need help with your finances? Are you afraid of sat? You have no idea what the tax regime is? I can help you with that and more...',
     ],
 
 

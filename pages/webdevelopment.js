@@ -41,10 +41,7 @@ const product = {
     ],
 
     description: [
-        'Do you want to create your own website and do not know how?',
-        'Do you need to make a landing page?',
-        'Do you want your business to reach more people?',
-        'I can help you with that and more...',
+        'Do you want to create your own website and do not know how? Do you need to make a landing page? Do you want your business to reach more people? I can help you with that and more...',
     ],
 
 

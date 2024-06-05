@@ -295,14 +295,12 @@ export default function Home() {
               in the fields of business management and industrial engineering.
             </p>
             <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
-              <div className="flex items-center justify-center sm:justify-start">
-                <p className="font-body text-lg font-semibold uppercase text-grey-20">
+              <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start">
+                <p className="font-body text-lg font-semibold uppercase text-grey-20 mb-4 sm:mb-0 sm:mr-4">
                   Connect with me
                 </p>
 
-                <br />
-
-                <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+                <div className="flex gap-4 justify-center">
                   {/* <!-- Github --> */}
                   <a href="https://github.com/Baalerica" target="_blank" rel="noopener noreferrer">
                     <svg
