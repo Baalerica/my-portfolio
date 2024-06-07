@@ -53,13 +53,6 @@ const SignIn = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
 
-            <div className="flex lg:flex lg:gap-x-12">
-                <Link href="/" legacyBehavior>
-                    <a className="text-sm font-semibold leading-6 text-blue-500">
-                        Home <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </Link>
-            </div>
 
             <div className="min-h-screen bg-custom-image flex flex-col justify-center py-12 sm:px-6 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -69,11 +62,13 @@ const SignIn = () => {
                     <p className="mt-2 text-center text-sm text-gray-600 max-w">
                         Or
                         <br />
+                        {/*
                         <Link href="/signup" legacyBehavior>
                             <a className="font-medium text-blue-600 hover:text-blue-500">
                                 Create an account
                             </a>
                         </Link>
+    */}
                     </p>
                 </div>
 
@@ -127,7 +122,7 @@ const SignIn = () => {
                                     </label>
                                 </div>
                             </div>
-
+                            {/*
                             <div>
                                 <button
                                     type="submit"
@@ -136,6 +131,7 @@ const SignIn = () => {
                                     Sign in
                                 </button>
                             </div>
+    */ }
                         </form>
 
                         <div className="mt-6">
