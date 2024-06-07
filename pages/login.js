@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Head from "next/head";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from 'next/router';
 
 const SignIn = () => {
+    const { data: session, status } = useSession();
+    const router = useRouter();
+
+    useEffect(() => {
+        if (status === "authenticated") {
+            router.push('/index');
+        }
+    }, [status, router]);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -29,6 +39,10 @@ const SignIn = () => {
     const handleRegisterDiscord = () => {
         signIn("discord", { callbackUrl: "/index" });
     };
+
+    if (status === "loading") {
+        return <div>Loading...</div>;
+    }
 
     return (
         <>
@@ -142,7 +156,7 @@ const SignIn = () => {
                                     >
                                         <img
                                             className="h-5 w-5"
-                                            src="logo-github.svg"
+                                            src="logo-github.png"
                                             alt="Github"
                                         />
                                     </button>
