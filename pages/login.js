@@ -1,15 +1,36 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from "next/head";
+import { signIn } from "next-auth/react";
 
 const SignIn = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
 
+        signIn("credentials", {
+            email,
+            password,
+            callbackUrl: "/index",
+        }).catch((error) => {
+            console.error("Error al iniciar sesión:", error);
+        });
+    };
+
+    const handleRegisterGoogle = () => {
+        signIn("google", { callbackUrl: "/index" });
+    };
+
+    const handleRegisterGitHub = () => {
+        signIn("github", { callbackUrl: "/index" });
+    };
+
+    const handleRegisterDiscord = () => {
+        signIn("discord", { callbackUrl: "/index" });
     };
 
     return (
-
         <>
             <Head>
                 <title>LogIn</title>
@@ -25,7 +46,6 @@ const SignIn = () => {
                     </a>
                 </Link>
             </div>
-
 
             <div className="min-h-screen bg-custom-image flex flex-col justify-center py-12 sm:px-6 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -103,6 +123,7 @@ const SignIn = () => {
                                 </button>
                             </div>
                         </form>
+
                         <div className="mt-6">
                             <div className="relative">
                                 <div className="absolute inset-0 flex items-center">
@@ -115,40 +136,40 @@ const SignIn = () => {
 
                             <div className="mt-6 grid grid-cols-3 gap-3">
                                 <div>
-                                    <a
-                                        href="#"
+                                    <button
+                                        onClick={handleRegisterGitHub}
                                         className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                                     >
                                         <img
                                             className="h-5 w-5"
-                                            src="https://www.svgrepo.com/show/512120/facebook-176.svg"
-                                            alt="Gitgub"
+                                            src="logo-github.svg"
+                                            alt="Github"
                                         />
-                                    </a>
+                                    </button>
                                 </div>
                                 <div>
-                                    <a
-                                        href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=355638716178-ufobsr43b9l8bus6eqhndq3fkf7qcu5s.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fmy-portfolio-eosin-pi.vercel.app%2Fapi%2Fauth%2Fcallback%2Fgoogle&state=F9z6RD-vR8fnvZtVUnx4E0KI-qbKvbsZeV6XdVBliqA&code_challenge=xmSJciQlzDN5D8qKkpYSs1KqY1XFSVCxMmv8dpYEFS0&code_challenge_method=S256&service=lso&o2v=2&ddm=0&flowName=GeneralOAuthFlow"
+                                    <button
+                                        onClick={handleRegisterGoogle}
                                         className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                                     >
                                         <img
                                             className="h-6 w-6"
-                                            src="https://www.svgrepo.com/show/506498/google.svg"
+                                            src="logo-google.png"
                                             alt="Google"
                                         />
-                                    </a>
+                                    </button>
                                 </div>
                                 <div>
-                                    <a
-                                        href="https://discord.com/oauth2/authorize?client_id=1241852474080362617&scope=identify%20email&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fdiscord&state=kQoGZ4p7WjztR6doth27pKryztG3ZGzjUOtBs1KTWeA"
+                                    <button
+                                        onClick={handleRegisterDiscord}
                                         className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                                     >
                                         <img
                                             className="h-6 w-6"
-                                            src="http://www.w3.org/1999/xlink"
+                                            src="logo-discord.png"
                                             alt="Discord"
                                         />
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +177,6 @@ const SignIn = () => {
                 </div>
             </div>
         </>
-
     );
 };
 
