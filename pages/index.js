@@ -7,6 +7,15 @@ import { useState } from "react";
 export default function Home() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    setIsAuthenticated(true);
+  };
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+  };
 
   return (
     <>
@@ -186,8 +195,27 @@ export default function Home() {
               </div>
             )}
           </div>
-
         </header>
+        {/*
+        <main>
+          <div className="flex items-center justify-center h-full">
+            {!isAuthenticated && (
+              <form onSubmit={handleLogin} className="bg-white p-6 rounded-lg shadow-md">
+                <h2 className="text-2xl font-bold mb-6">Login</h2>
+                <input type="text" placeholder="Username" required className="block w-full mb-4 p-2 border border-gray-300 rounded" />
+                <input type="password" placeholder="Password" required className="block w-full mb-4 p-2 border border-gray-300 rounded" />
+                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
+              </form>
+            )}
+            {isAuthenticated && (
+              <div className="text-center">
+                <h2 className="text-2xl font-bold mb-6">Welcome, User!</h2>
+                <button onClick={handleLogout} className="bg-blue-500 text-white px-4 py-2 rounded">Logout</button>
+              </div>
+            )}
+          </div>
+        </main>
+*/}
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -278,28 +306,31 @@ export default function Home() {
       <div className="bg-grey-50" id="about">
         <div className="container flex flex-col items-center py-16 md:py-20 lg:flex-row mx-auto">
           <div className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-            <h2 className="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-              Who am I?
-            </h2>
-            <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-              I&apos;m Erica Rodr&apos;guez, I&apos;m going to become A Web Developer
-            </h4>
-            <p className="pt-6 font-body leading-relaxed text-grey-20">
-              I&apos;m an engineer in Business Management,
-              currently pursuing a Masters degree in Industrial Engineering.
-              Alongside my academic endeavors, Ive embarked on the exciting
-              journey of learning front-end programming. This dual focus
-              reflects my dedication to expanding my skills and knowledge base in
-              both business and technology domains. I am eager to leverage this
-              diverse expertise to drive innovation and make meaningful contributions
-              in the fields of business management and industrial engineering.
-            </p>
-            <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
-              <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start">
-                <p className="font-body text-lg font-semibold uppercase text-grey-20 mb-4 sm:mb-0 sm:mr-4">
-                  Connect with me
-                </p>
+            <div className="p-5">
+              <h2 className="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl pb-4">
+                Who am I?
+              </h2>
+              <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl pb-4">
+                I&apos;m Erica Rodr&apos;guez, I&apos;m going to become A Web Developer
+              </h4>
+              <p className="pt-6 font-body leading-relaxed text-grey-20 pb-4">
+                I&apos;m an engineer in Business Management,
+                currently pursuing a Masters degree in Industrial Engineering.
+                Alongside my academic endeavors, Ive embarked on the exciting
+                journey of learning front-end programming. This dual focus
+                reflects my dedication to expanding my skills and knowledge base in
+                both business and technology domains. I am eager to leverage this
+                diverse expertise to drive innovation and make meaningful contributions
+                in the fields of business management and industrial engineering.
+              </p>
 
+
+              <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+                <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start">
+                  <p className="font-body text-lg font-semibold uppercase text-grey-20 mb-4 sm:mb-0 sm:mr-4">
+                    Connect with me
+                  </p>
+                </div>
                 <div className="flex gap-4 justify-center">
                   {/* <!-- Github --> */}
                   <a href="https://github.com/Baalerica" target="_blank" rel="noopener noreferrer">
@@ -344,14 +375,7 @@ export default function Home() {
                   <i className="bx bx-chevron-right text-2xl text-primary"></i>
                 </div>
               </div>
-              {/* <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-                <a href="https://www.linkedin.com/in/erica-rodríguez" className="pl-4">
-                  <i className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
-                </a>
-                <a href="https://github.com/Baalerica" className="pl-4">
-                  <i className="bx bxl-github text-2xl text-primary hover:text-yellow"></i>
-                </a>
-            </div>*/}
+
             </div>
           </div>
           <div className="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
