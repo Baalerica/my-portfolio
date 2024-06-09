@@ -2,18 +2,24 @@ import Head from "next/head";
 import Link from 'next/link';
 import Image from "next/image";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 export default function Home() {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handleLogin = (event) => {
-    event.preventDefault();
-    setIsAuthenticated(true);
-  };
+  useEffect(() => {
+    // Verificar si hay una sesión iniciada (puedes ajustar esto según tu lógica de autenticación)
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
   const handleLogout = () => {
+    // Aquí iría tu lógica de cierre de sesión
+    localStorage.removeItem('authToken'); // O el método que uses para manejar la sesión
     setIsAuthenticated(false);
   };
 
@@ -74,11 +80,18 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <Link href="/login" legacyBehavior>
-                <a className="text-sm font-semibold leading-6 text-white">
-                  Log in <span aria-hidden="true">&rarr;</span>
-                </a>
-              </Link>
+
+              {isAuthenticated ? (
+                <button onClick={handleLogout} className="text-sm font-semibold leading-6 text-white">
+                  Logout <span aria-hidden="true">&rarr;</span>
+                </button>
+              ) : (
+                <Link href="/login" legacyBehavior>
+                  <a className="text-sm font-semibold leading-6 text-white">
+                    Log in <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </Link>
+              )}
             </div>
           </nav>
 
@@ -196,26 +209,8 @@ export default function Home() {
             )}
           </div>
         </header>
-        {/*
-        <main>
-          <div className="flex items-center justify-center h-full">
-            {!isAuthenticated && (
-              <form onSubmit={handleLogin} className="bg-white p-6 rounded-lg shadow-md">
-                <h2 className="text-2xl font-bold mb-6">Login</h2>
-                <input type="text" placeholder="Username" required className="block w-full mb-4 p-2 border border-gray-300 rounded" />
-                <input type="password" placeholder="Password" required className="block w-full mb-4 p-2 border border-gray-300 rounded" />
-                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
-              </form>
-            )}
-            {isAuthenticated && (
-              <div className="text-center">
-                <h2 className="text-2xl font-bold mb-6">Welcome, User!</h2>
-                <button onClick={handleLogout} className="bg-blue-500 text-white px-4 py-2 rounded">Logout</button>
-              </div>
-            )}
-          </div>
-        </main>
-*/}
+
+
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
