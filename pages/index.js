@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import React from "react";
 import { useState, useEffect } from "react";
+import LoginButton from "@/components/LoginButton";
 
 
 export default function Home() {
@@ -10,7 +11,6 @@ export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    // Verificar si hay una sesión iniciada (puedes ajustar esto según tu lógica de autenticación)
     const token = localStorage.getItem('authToken');
     if (token) {
       setIsAuthenticated(true);
@@ -18,8 +18,8 @@ export default function Home() {
   }, []);
 
   const handleLogout = () => {
-    // Aquí iría tu lógica de cierre de sesión
-    localStorage.removeItem('authToken'); // O el método que uses para manejar la sesión
+
+    localStorage.removeItem('authToken');
     setIsAuthenticated(false);
   };
 
@@ -40,7 +40,7 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       >
-        <header className="absolute inset-x-0 top-0 z-50">
+        <header className="fixed inset-x-0 top-0 z-50 bg-black">
           <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
@@ -48,48 +48,28 @@ export default function Home() {
                 <Image className="h-8 w-auto" src="/logo.png" alt="" width={32} height={32} />
               </a>
             </div>
-
             <div className="hidden lg:flex lg:gap-x-12">
-              <a href="#about" className="text-sm font-semibold leading-6 text-white">
-                About
-              </a>
-              <a href="#services" className="text-sm font-semibold leading-6 text-white">
-                Services
-              </a>
-              <a href="#portfolio" className="text-sm font-semibold leading-6 text-white">
-                Portfolio
-              </a>
-              <a href="#clients" className="text-sm font-semibold leading-6 text-white">
-                Projects
-              </a>
-              <a href="#work" className="text-sm font-semibold leading-6 text-white">
-                Work
-              </a>
-              <a href="#statistics" className="text-sm font-semibold leading-6 text-white">
-                Statistics
-              </a>
-              <a href="#contact" className="text-sm font-semibold leading-6 text-white">
-                Contact
-              </a>
-              <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                <Link href="/accounting" legacyBehavior>
-                  <a className="text-sm font-semibold leading-6 text-white">
-                    Hire me! <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </Link>
-              </div>
+              <a href="#about" className="text-sm font-semibold leading-6 text-white">About</a>
+              <a href="#services" className="text-sm font-semibold leading-6 text-white">Services</a>
+              <a href="#portfolio" className="text-sm font-semibold leading-6 text-white">Portfolio</a>
+              <a href="#clients" className="text-sm font-semibold leading-6 text-white">Projects</a>
+              <a href="#work" className="text-sm font-semibold leading-6 text-white">Work</a>
+              <a href="#statistics" className="text-sm font-semibold leading-6 text-white">Statistics</a>
+              <a href="#contact" className="text-sm font-semibold leading-6 text-white">Contact</a>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-
+              <Link href="/accounting" legacyBehavior>
+                <a className="text-sm font-semibold leading-6 text-white">Hire me! <span aria-hidden="true">&rarr;</span></a>
+              </Link>
+            </div>
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               {isAuthenticated ? (
                 <button onClick={handleLogout} className="text-sm font-semibold leading-6 text-white">
                   Logout <span aria-hidden="true">&rarr;</span>
                 </button>
               ) : (
                 <Link href="/login" legacyBehavior>
-                  <a className="text-sm font-semibold leading-6 text-white">
-                    Log in <span aria-hidden="true">&rarr;</span>
-                  </a>
+                  <a className="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
                 </Link>
               )}
             </div>
@@ -112,8 +92,8 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
-          <div>
 
+          <div>
             {menuOpen && (
               <div className="lg:hidden" role="dialog" aria-modal="true">
                 <div className="fixed inset-0 z-50 bg-black opacity-50" onClick={() => setMenuOpen(false)}></div>
@@ -123,7 +103,6 @@ export default function Home() {
                       <span className="sr-only">Baalerica</span>
                       <Image className="h-8 w-auto" src="/logo.png" alt="" width={32} height={32} />
                     </a>
-
                     <button
                       type="button"
                       className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -145,61 +124,22 @@ export default function Home() {
                   <div className="mt-6 flow-root">
                     <div className="-my-6 divide-y divide-gray-500/10">
                       <div className="space-y-2 py-6">
-                        <a
-                          href="#about"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          About
-                        </a>
-                        <a
-                          href="#services"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          Services
-                        </a>
-                        <a
-                          href="#portfolio"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          Portfolio
-                        </a>
-                        <a
-                          href="#clients"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          Clients
-                        </a>
-                        <a
-                          href="#work"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          Work
-                        </a>
-                        <a
-                          href="#statistics"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          Statistics
-                        </a>
-                        <a
-                          href="#contact"
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          Projects
-                        </a>
-                        <div className="py-6">
-                          <Link href="/accounting" legacyBehavior>
-                            <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                              Hire me! <span aria-hidden="true">&rarr;</span>
-                            </a>
-                          </Link>
-                        </div>
+                        <a href="#about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                        <a href="#services" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
+                        <a href="#portfolio" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</a>
+                        <a href="#clients" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Clients</a>
+                        <a href="#work" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Work</a>
+                        <a href="#statistics" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Statistics</a>
+                        <a href="#contact" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
+
+                        <Link href="/accounting" legacyBehavior>
+                          <a className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Hire me!</a>
+                        </Link>
+
                       </div>
                       <div className="py-6">
                         <Link href="/login" legacyBehavior>
-                          <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                            Log in <span aria-hidden="true">&rarr;</span>
-                          </a>
+                          <a className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in <span aria-hidden="true">&rarr;</span></a>
                         </Link>
                       </div>
                     </div>
